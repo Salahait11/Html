@@ -1,0 +1,259 @@
+<head>
+    <title>Curriculum vitae</title>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  color: #4472C4;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+p{
+  margin: 0 0 1rem;
+}
+
+h1{
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+h2{
+  margin: 0 0 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color: #4472C4;
+}
+
+.text-darkblue{
+  color: #002060;
+}
+
+.text-uppercase{
+  text-transform: uppercase; 
+}
+
+.icon{
+  margin-right: .5rem;
+}
+
+.cv-container{
+    /* est la classe englobante, qui va définir la largeur de notre CV de 1200px */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left-column right-column right-column";
+  width: 1200px;
+  margin: 100px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.section{
+  margin-bottom: 1.5rem;
+}
+
+/* LEFT COLUMN */
+.left-column{
+  grid-area: left-column;
+  padding: 50px;
+  background-color: #4472C4;
+  color: white;
+}
+
+.portait{
+  border-radius: 50%;
+  max-width: 190px;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills{
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0 0 1rem;
+}
+
+/* RIGHT COLUMN */
+.right-column{
+  grid-area: right-column;
+  display: grid;
+  grid-template-rows: 250px 1fr;
+  grid-template-areas: 
+    "header"
+    "content";
+}
+
+/* HEADER */
+.header{
+  grid-area: header;
+  padding: 50px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infos{
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* CONTENT */
+.content{
+  grid-area: content;
+  padding: 50px;
+}
+
+.experience-list{
+  list-style-type: circle;
+}
+    </style>
+  </head>
+  <body>
+      <div class="cv-container">
+        <div class="left-column">
+          <img class="portait" src="C:\Users\aitha\OneDrive\Bureau\DSC_4153.jpg" />
+          <div class="section">
+            <p>
+              <i class="icon fab fa-linkedin text-darkblue"></i> Aithammou-Salah
+            </p>
+          </div>
+          <div class="section">
+            <h2>À PROPOS</h2>
+            <p>
+                Chercheur d'emploi dynamique et polyvalent, je suis à la recherche d'opportunités qui me permettront d'appliquer mes compétences professionnelles et techniques. Fort d'une expérience variée, je me distingue par ma capacité à travailler de manière indépendante tout en excellant dans un environnement collaboratif.
+            </p>
+            <p>
+                Mes compétences en communication, ma flexibilité et ma capacité à résoudre des problèmes font de moi un atout précieux dans divers contextes professionnels.
+            </p>
+          </div>
+          <div class="section">
+            <h2>COMPÉTENCES</h2>
+            <ul class="skills">
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Travailler de manière indépendante</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Bonne communication</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Travailler en équipe</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Flexibilité et adaptation</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Capacité à résoudre des problèmes</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Compétences techniques</li>
+              <li><i class="icon fas fa-check-circle text-darkblue"></i> Créativité</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Langues</h2>
+            <p>
+              Arabe: langue maternelle
+              <br>
+              Français : Intermédiaire
+              <br>
+              Anglais : Notions
+            </p>
+          </div>
+          <div class="section">
+            <h2>Centres d'intérêt</h2>
+            <p>
+              Jeux vidéo, jouer et développer
+              <br>
+              Musique, écoute et composition
+              <br>
+              Art en général
+              <br>
+              Sport
+              <br>
+              Informatique en général
+            </p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="header">
+            <h1><span class="text-blue text-uppercase">Ait HAMMOU </span>SALAH</h1>
+            <p>Chercheur d'emploi : Opportunités améliorées</p>
+            <ul class="infos">
+              <li><i class="icon fas fa-at text-blue"></i> <a href="aithammousalah0@gmail.com">aithammousalah0@gmail.com</a></li>
+              <li><i class="icon fas fa-phone text-blue"></i> +212 610186414</li>
+              <li><i class="icon fas fa-map-marker-alt text-blue"></i> Appt 19 les bloueuets groupe yassmine, Mohammedia</li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="section">
+                <h2>Expériences <br><span class="text-blue">professionelles</span></h2>
+                <p>
+                  <strong>07/2023 <i class="fas fa-long-arrow-alt-right"></i> 11/2023</strong>
+                  <br>
+                  Caissier au Parking Gare Mohammedida chez <em>Oncf</em>
+                </p>
+                <ul class="experience-list">
+                  <li>Gestion des paiements en espèces et émission de tickets.</li>
+                  <li>Accueil et assistance aux clients.</li>
+                  <li>Respect des règles de sécurité et gestion de la circulation.</li>
+                  <li>Collaboration efficace au sein de l'équipe.</li>
+                </ul>
+                <p>
+                    <strong>07/2022 <i class="fas fa-long-arrow-alt-right"></i> 10/2022</strong> et <strong>05/2023 <i class="fas fa-long-arrow-alt-right"></i> 07/2023</strong>
+                    <br>
+                    Serveur en Restauration chez <em>O SANTA BEACHs</em>
+                </p>
+                  <ul class="experience-list">
+                    <li>Gestion des paiements en espèces et émission de tickets.</li>
+                    <li>Accueil et assistance aux clients.</li>
+                    <li>Respect des règles de sécurité et gestion de la circulation.</li>
+                    <li>Collaboration efficace au sein de l'équipe.</li>
+                  </ul>
+                <p>
+                    <strong>03/2022 <i class="fas fa-long-arrow-alt-right"></i> 05/2022</strong>
+                  <br>
+                    Délégué de distribution des flyers chez <em>LBARAKA</em>
+                </p>
+                  <ul class="experience-list">
+                    <li>Organisation et distribution efficace du matériel publicitaire.</li>
+                    <li>Gestion méthodique des zones de distribution.</li>
+                  </ul>
+            </div>
+            <div class="section">
+              <h2>Études <br><span class="text-blue">& formations</span></h2>
+              <p>
+                <strong>Octobre 2023 <i class="fas fa-long-arrow-alt-right"></i> Aujourd'hui</strong>
+                <br>
+                <em>TS en développement informatique</em>, Diplômé, IGIC – Institut de Gestion Informatique et Commerciale
+              </p>
+              <p>
+                <strong>Octobre 2020 <i class="fas fa-long-arrow-alt-right"></i> Juin 2021</strong>
+                <br>
+                <em>Baccalauréat en science du vivant et de la terre</em>, Lycée Abdelkrim Alkhattabi à Mohammedia
+              </p>
+            </div>
+            <div class="section">
+              <h2>Autres <br><span class="text-blue">expériences</span></h2>
+              <p>
+                Permis B
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
